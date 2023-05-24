@@ -1,0 +1,175 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Ajustado para alinear los contenedores en la parte superior */
+  margin: 0;
+  padding: 20px;
+}
+
+.left-side {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-right: 10px;
+}
+
+.left-side h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.input-section {
+  margin-bottom: 10px;
+  padding: 7px;
+}
+
+.input-section input {
+  width: 85%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.button-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.button-section button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f8d7da;
+  color: #721c24;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.button-section button:hover {
+  transform: scale(1.05);
+}
+
+.button-section button:active {
+  transform: scale(0.95);
+}
+
+#encrypted-text {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.right-side {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.right-side h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#history-list {
+  list-style: none;
+  padding: 0;
+}
+
+#history-list li {
+  margin-bottom: 5px;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo img {
+  width: 250px !important;
+  height: auto;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Cool infinite background scrolling animation.
+* Twitter: @kootoopas
+*/
+/* Exo thin font from Google. */
+@import url(https://fonts.googleapis.com/css?family=Exo:100);
+/* Background data (Original source: https://subtlepatterns.com/grid-me/) */
+/* Animations */
+@-webkit-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-webkit-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+/* Main styles */
+body {
+  margin-top: 0; /* Eliminamos el margen superior */
+  color: #999;
+  font: 400 16px/1.5 exo, ubuntu, "segoe ui", helvetica, arial, sans-serif;
+  text-align: center;
+  /* img size is 50x50 */
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+  -webkit-animation: bg-scrolling-reverse .92s infinite;
+  -moz-animation: bg-scrolling-reverse .92s infinite;
+  -o-animation: bg-scrolling-reverse .92s infinite;
+  animation: bg-scrolling-reverse .92s infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
